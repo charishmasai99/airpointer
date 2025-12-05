@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AirPointer — AI Hand Gesture YouTube Controller</title>
+  <style>
+    :root{--bg:#f8f7f3;--card:#ffffff;--muted:#6b6b6b;--accent:#2b90ff}
+    body{margin:0;font-family:Inter,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;background:var(--bg);color:#111}
+    .container{max-width:980px;margin:36px auto;padding:20px}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:72px;height:72px;border-radius:12px;background:linear-gradient(135deg,#2b90ff,#6dd5ed);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:20px}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin:8px 0 18px}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:20px}
+    .card{background:var(--card);border-radius:12px;padding:16px;box-shadow:0 6px 22px rgba(15,20,30,0.06)}
+    .demo img{max-width:100%;border-radius:8px;display:block;margin:0 auto}
+    .small{font-size:13px;color:var(--muted)}
+    .button{display:inline-block;padding:10px 14px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none;font-weight:600}
+    .list{margin:12px 0 0;padding-left:18px;color:var(--muted)}
+    footer{margin-top:22px;font-size:13px;color:var(--muted);text-align:center}
+    pre{background:#f1f3f5;padding:12px;border-radius:8px;overflow:auto}
+    @media(max-width:880px){.grid{grid-template-columns:1fr;}.logo{width:56px;height:56px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">AP</div>
+      <div>
+        <h1>AirPointer — AI Hand Gesture YouTube Controller</h1>
+        <p class="lead">Use your webcam to control YouTube with hand gestures. Built with MediaPipe, OpenCV and PyAutoGUI.</p>
+        <a class="button" href="https://github.com/charishmasai99/airpointer" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </header>
+
+    <div style="height:18px"></div>
+
+    <div class="grid">
+      <main class="card">
+        <section class="demo">
+          <h2 style="margin-top:0">Demo</h2>
+          <!-- If you have a GIF demo: assets/demo.gif -->
+          <img src="../assets/demo.gif" alt="AirPointer demo GIF (if available)"/>
+          <p class="small">If demo not visible, upload <code>assets/demo.gif</code> to repository.</p>
+        </section>
+
+        <section style="margin-top:16px">
+          <h3>Quick start</h3>
+          <pre><code>git clone https://github.com/charishmasai99/airpointer.git
+cd airpointer
+pip install opencv-python mediapipe numpy pyautogui
+python airpointer_youtube.py
+</code></pre>
+          <p class="small">Make sure a YouTube video tab is open and focused when using the app.</p>
+        </section>
+
+        <section style="margin-top:16px">
+          <h3>Gesture guide</h3>
+          <p class="small">Primary gestures and their actions:</p>
+          <ul class="list">
+            <li>✊ Fist — Pause / Play</li>
+            <li>🖐️ Open palm — Play</li>
+            <li>✌️ Index + middle — Volume up</li>
+            <li>🤘 Ring + pinky — Volume down</li>
+            <li>🤙 Pinky only — Next video</li>
+            <li>👍 Thumb up — Volume up</li>
+            <li>👎 Thumb down — Volume down</li>
+            <li>👉 Swipe right — Seek forward</li>
+            <li>👈 Swipe left — Seek back</li>
+          </ul>
+        </section>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h4 style="margin-top:0">Gesture diagram</h4>
+          <img src="../assets/gestures.png" alt="Gesture diagram" />
+          <p class="small" style="margin-top:10px">Diagram showing gesture → action mappings.</p>
+        </div>
+
+        <div style="height:12px"></div>
+
+        <div class="card">
+          <h4 style="margin-top:0">Download</h4>
+          <p class="small">You can download the project or a packaged EXE from the GitHub Releases page.</p>
+          <a class="button" href="https://github.com/charishmasai99/airpointer/releases" target="_blank" rel="noopener">Releases</a>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      © 2025 Charishma Sai — <a href="https://github.com/charishmasai99/airpointer" target="_blank">GitHub Repo</a>
+    </footer>
+  </div>
+</body>
+</html>
