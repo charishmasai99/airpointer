@@ -19,12 +19,8 @@ Built with MediaPipe + OpenCV + PyAutoGUI, AirPointer lets you control YouTube t
 ✔ Works on Windows, macOS, Linux
 
 🎥 Demo
+![Gesture Diagram](assets/gestures.png)
 
-🔹 Add your demo GIF or screenshots here later.
-Example placeholders:
-
-/assets/demo1.gif
-/assets/gestures.png
 
 🖐️ Gesture Controls
 Gesture	Action
@@ -54,7 +50,7 @@ NumPy → math utilities
 
 📦 Installation
 1️⃣ Clone the repository
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git clone https://github.com/charishmasai99/airpointer.git
 cd YOUR_REPO_NAME
 
 2️⃣ Install dependencies
