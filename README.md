@@ -51,12 +51,13 @@ NumPy → math utilities
 📦 Installation
 1️⃣ Clone the repository
 git clone https://github.com/charishmasai99/airpointer.git
-cd YOUR_REPO_NAME
+cd airpointer
 
 2️⃣ Install dependencies
 pip install opencv-python mediapipe numpy pyautogui
 
 3️⃣ Run the application
+
 python airpointer_youtube.py
 
 ⚙️ Project Structure
